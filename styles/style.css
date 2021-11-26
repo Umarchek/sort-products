@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', Verdana, sans-serif;
+    background: #75b4c0;
+    user-select: none;
+}
+
+img {
+    -webkit-user-drag: none;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+button {
+    border: none;
+    outline: none;
+    text-align: inherit;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*******************************************************/
+
+
+/*search START*/
+
+#search {
+    border: none;
+    outline: none;
+    width: 120px;
+    padding: 5px;
+    border-right: 1px solid #677d81;
+}
+
+
+/*search END*/
+
+
+/******************************************************/
+
+
+/*drop down list START*/
+
+.drop-down-list {
+    position: relative;
+    width: 120px;
+    cursor: pointer;
+}
+
+.drop-down-list>button {
+    font-weight: bold;
+}
+
+.drop-down-list__button {
+    width: 100%;
+    padding: 7px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+
+.drop-down-list__button img {
+    height: 15px;
+}
+
+.drop-down-list__options {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10px;
+}
+
+.drop-down-list__options ul {
+    padding: 0;
+}
+
+.drop-down-list__option {
+    list-style-type: none;
+    border-top: 1px solid #677d81;
+}
+
+.drop-down-list__options .drop-down-list__button:hover {
+    background: #e2e2e2;
+}
+
+.drop-down-list__option:last-child {
+    border-bottom: 1px solid #677d81;
+}
+
+.arrow-bottom {
+    background-image: url('https://github.com/egormolchanov/sort-goods/blob/master/image/bottom-arrow.png?raw=true');
+    background-size: cover;
+    height: 15px;
+    width: 15px;
+}
+
+.arrow-top {
+    background-image: url('https://github.com/egormolchanov/sort-goods/blob/master/image/top-arrow.png?raw=true');
+    background-size: cover;
+    height: 15px;
+    width: 15px;
+}
+
+
+/*drop down list END*/
+
+
+/********************************************************/
+
+
+/*sorting goods START*/
+
+.showcase-goods {
+    margin: 20px auto;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-auto-rows: auto;
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.goods {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 250px;
+    padding: 10px;
+    background: white;
+}
+
+.goods img {
+    width: 100%;
+}
+
+.goods-text {
+    text-align: center;
+    font-size: 16px;
+    margin: 10px;
+}
+
+
+/*sorting goods END*/
+
+#noResults {
+    text-align: center;
+    color: red;
+}
+
+.hide {
+    display: none;
+}
+
+
+/**************************/
+
+
+/* info block style START */
+
+.info-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 100%;
+    min-width: 270px;
+    max-width: 400px;
+    background: wheat;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Signika', sans-serif;
+}
+
+.info-block h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.info-block ol {
+    padding-left: 1.25rem;
+}
+
+.info-block li {
+    line-height: 1.5;
+}
+
+
+/*info blok style   END*/
